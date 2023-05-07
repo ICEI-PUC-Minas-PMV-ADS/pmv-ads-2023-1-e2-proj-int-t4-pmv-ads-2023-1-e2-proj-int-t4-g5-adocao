@@ -148,9 +148,7 @@ form {
 	text-align: left;
 }
 
-.alinhamento{
-    text-align: center;
-}
+
 
 footer {
     background-color:#747474;
@@ -163,48 +161,5 @@ footer {
     padding: 80px;
   }
 
-  .quemsomos{
-    background-color: #fafafa;
-    display:inline-flex;
-    align-items:center;
-    justify-content: space-evenly;
- }
 
 
- .faq {
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.faq h3 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.faq p {
-    margin: 10px 0;
-    display: none;
-}
-.faq.active p {
-    display: block;
-}
-.faq h3::before {
-    content: "\25BC";
-    display: inline-block;
-    margin-right: 5px;
-    font-size: 16px;
-}
-.faq.active h3::before {
-    content: "\25B2";
-}
-.conteudo{
-    padding-right: 20px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    text-align: center;
-   
-   
- 
-}  
