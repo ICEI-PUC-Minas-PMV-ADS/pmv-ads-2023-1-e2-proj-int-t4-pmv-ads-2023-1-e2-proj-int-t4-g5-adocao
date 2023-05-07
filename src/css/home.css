@@ -94,6 +94,8 @@ body{
 
 .text-info p{
     color: #9f9f9f;
+    margin-bottom: 50px;
+    line-height: 25px;
 }
 
 .campo-busca input{
@@ -121,3 +123,28 @@ img{
     height: 300px;
 }
 
+.como-funciona h1{
+    text-align: center;
+    color: #3C2B24;
+}
+
+.cards-etapas{
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.etapa img{
+    width: 80px;
+    height: 80px;  
+}
+
+.etapa h4{
+    color: #52362D;
+}
+
+.etapa p{
+    color: #9f9f9f;
+    max-width: 350px;
+}
