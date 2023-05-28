@@ -29,9 +29,9 @@ body{
 
 #formulario {
     padding: 15px;
-    /* background-color: ; */
-    border: solid;
-    border-radius: 13px;
+    background-color: #BABABA;
+    border: center;
+    border-radius: 15px;
 }
 
 p {
@@ -40,4 +40,15 @@ p {
 
 button {
     color: blue;
+}
+
+footer {
+    background-color:#747474;
+    color: white;
+    text-align: center;   
+    padding: 10px;
+  }
+
+#text {
+    padding: 150px;
 }
