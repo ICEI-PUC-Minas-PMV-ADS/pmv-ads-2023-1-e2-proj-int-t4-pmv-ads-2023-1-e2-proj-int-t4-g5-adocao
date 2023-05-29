@@ -29,9 +29,9 @@ body{
 
 #formulario {
     padding: 15px;
-    background-color: #BABABA;
-    border: center;
-    border-radius: 15px;
+    /* background-color: ; */
+    border: solid;
+    border-radius: 13px;
 }
 
 p {
@@ -48,7 +48,3 @@ footer {
     text-align: center;   
     padding: 10px;
   }
-
-#text {
-    padding: 150px;
-}
