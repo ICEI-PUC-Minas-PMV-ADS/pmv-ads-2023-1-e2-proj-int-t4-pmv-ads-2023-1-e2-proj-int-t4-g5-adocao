@@ -1,80 +1,68 @@
-@import "./home.css";
-@import "./login.css";
+body, h1, h2, p, ul, li, a{
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    color: #222222;
 }
 
-.header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 150px;
-    padding-bottom: 15px;
+ul {
+    list-style: none;
 }
 
-.logo {
-    color: #3C2B24;
-    font-size: 35px;
-    font-weight: bold;
+a{
     text-decoration: none;
 }
 
-.navbar {
-    font-family: Poppins;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    font-size: 17px;
-    background-color: #F58B61;
-    border-radius: 13px;
-}
-
-.navbar li {
-    position: relative;
-}
-
-.navbar li a {
+img{
     display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
     color: #3C2B24;
-    text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 16px;
-    padding-right: 16px;
-    text-decoration: none;
 }
 
-.navbar li:hover > a {
-    color: #d0d0d0;
+.menu-logo img{
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
 }
 
-.navbar li ul {
-    display: none;
-    position: absolute;
-    left: -60px;
-    padding: 0;
-    background-color: #ffffff;
-    box-shadow: 0px 10px 15px #a0a0a040;
-    list-style-type: none;
-    min-width: 200px;
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;  
 }
 
-.navbar li:hover ul {
+.menu-nav a{
+    font-size: 1.1em;
     display: block;
+    padding: 20px;
 }
 
-.login {
-    color: #3C2B24;
-    font-size: 17px;
-    font-weight: bold;
-    text-decoration: none;
+.menu-nav a:hover{
+    color: #774F41;
 }
 
-.info-intro{
-    border-top: 2px solid #EB5A21;
-    border-bottom: 2px solid #EB5A21;
+.slogan{
+    border-top: 2px solid #EF7A4C;
+    border-bottom: 2px solid #EF7A4C;
     max-width: 960px;
     margin: 0 auto;
     padding: 60px 0;
@@ -82,69 +70,80 @@ body{
     flex-wrap: wrap;
 }
 
-.text-info{
+.slogan-info{
+    flex: 2;
+    margin: 0 10px;
+    flex: 2 1 300px;
+}
+
+.slogan-info h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.slogan-info p{
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 2em;
+    color: #7c7c7c;
+}
+
+.slogan-img{
+    flex: 1 1 160px;
+    margin: 10px ;
+}
+
+@media(max-width: 500px)
+{
+    .slogan-img{
+        display: none;
+    }
+}
+
+.como-funciona{
+    max-width: 960px;
+    margin: 60px auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.text-info h1{
-    color: #31231E;
-}
-
-.text-info p{
-    color: #9f9f9f;
-    margin-bottom: 50px;
-    line-height: 25px;
-}
-
-.campo-busca input{
-    height: 35px;
-    border: 1px solid #DBDBDB;
-    border-radius: 4px;
-    margin-right: 10px;
-}
-
-.campo-busca button{
-    width: 170px;
-    height: 40px;
-    background: #EC6A37;
-    color: #3C2B24;
-    border: 2px solid #E24E1B;
-    border-radius: 5px;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: bold;   
-    cursor: pointer;
-}
-
-img{
-    width: 300px;
-    height: 300px;
+    flex-wrap: wrap;
 }
 
 .como-funciona h1{
-    text-align: center;
-    color: #3C2B24;
+    font-size: 3em;
+    margin-bottom: .5em;
 }
 
-.cards-etapas{
-    margin-top: 56px;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+.item-etapa{
+    flex: 1 1 300px;
+    margin: 20px 10px;
 }
 
-.etapa img{
-    width: 80px;
-    height: 80px;  
+.item-etapa h2{
+    font-size: 1.5em;
+    color: #a4a4a4;
+    margin-bottom: 20px;
 }
 
-.etapa h4{
-    color: #52362D;
+.item-etapa img{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
 }
 
-.etapa p{
-    color: #9f9f9f;
-    max-width: 350px;
+.item-etapa:nth-of-type(1) h2::before{
+    background: #ae81ff;
+}
+
+.item-etapa:nth-of-type(2) h2::before{
+    background: #f9265e;
+}
+
+.item-etapa:nth-of-type(3) h2::before{
+    background: #66d9eb;
+}
+
+.item-etapa p{
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
 }
