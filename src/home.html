@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
@@ -15,41 +17,55 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 
-<header>
-    <div class="menu">
-        <div class="menu-logo">
-            <a href="#"><img src="img/logo1.svg" alt=""></a>
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu-logo">
+                <a href="#"><img src="img/logo1.svg" alt=""></a>
+            </div>
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Buscar Pet</a></li>
+                    <li><a href="#">Anunciar Pet</a></li>
+                    <li><a href="#">Canal de Denúncias</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="menu-hamburguer">
+                <button onclick="mostrarMenu()"><img src="img/iconmenu.svg" alt="" class="icon"></button>
+            </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Buscar Pet</a></li>
+                    <li><a href="#">Anunciar Pet</a></li>
+                    <li><a href="#">Canal de Denúncias</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Perguntas Frequentes</a></li>        
+                </ul>
+            </div>
         </div>
-        <nav class="menu-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Buscar Pet</a></li>
-                <li><a href="#">Anunciar Pet</a></li>
-                <li><a href="#">Canal de Denúncias</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<section class="slogan" id="slogan">
-    <div class="slogan-info">
-        <h1>Adote Amor, Adote um Animal</h1>
-        <p>
-            Com uma ampla variedade de animais em busca de um lar amoroso, você pode encontrar seu novo membro da
-            família conosco. Adote hoje e faça a diferença na vida de um pet!
-        </p>
-        <div class="campo-busca">
-            <input type="text" placeholder="Onde deseja procurar?">
-            <button type="submit">Buscar</button>
+    </header>
+    
+    <section class="slogan" id="slogan">
+        <div class="slogan-info">
+            <h1>Adote Amor, Adote um Animal</h1>
+            <p>
+                Com uma ampla variedade de animais em busca de um lar amoroso, você pode encontrar seu novo membro da
+                família conosco. Adote hoje e faça a diferença na vida de um pet!
+            </p>
+            <div class="campo-busca">
+                <input type="text" placeholder="Onde deseja procurar?">
+                <button type="submit">Buscar</button>
+            </div>
         </div>
-    </div>
-    <div class="slogan-img">
-        <img src="img/imgInicio.svg" alt="imagem do home">
-    </div>
-</section>
-
-<section class="como-funciona">
+        <div class="slogan-img">
+            <img src="img/imgInicio.svg" alt="imagem do home">
+        </div>
+    </section>
+    
+    <section class="como-funciona">
         <div class="item-etapa">
             <img src="img/etapa1.svg" alt="Etapa 1">
             <h2>Encontre seu animal próximo</h2>
@@ -74,4 +90,23 @@
                 compromisso em cuidar e proteger seu novo amigo.
             </p>
         </div>
-</section>
+    </section>
+    
+    <section class="eventos" id="eventos">
+        <h1>Eventos de Adoção</h1>
+        <div class="evento1">
+            <img src="img/evento1.jpg" alt="Evento 1">
+            <div class="info-evento">
+                <h2>EVENTO 1</h2>
+                <p>
+                    Está marcado para sábado (3/06), das 9h às 12h, mas uma edição do Evento de Adoção de Animais, realizado
+                    pelo Setor de Zoonoses da Secretaria de Saúde de Cotia. O evento será na Praça dos Romeiros, em Caucaia
+                    do
+                    Alto, estarão disponíveis para adoção cães e gatos, todos já estão castrados, vacinados e vermifugados.
+                </p>
+                <a href="https://cotia.sp.gov.br/noticia/4602/sabado-306-tem-evento-de-de-adocao-de-animais-em-caucaia">Saiba mais<span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+        </div>
+    </section>
+    <script src="../script.js"></script>
+</body>

@@ -56,8 +56,58 @@ img{
     padding: 20px;
 }
 
+.menu-nav a:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: #774F41;;
+    margin-top: 4px;
+    transition: 0.3s;
+}
+
+.menu-nav a:hover:after{
+    width: 100%;
+}
+
 .menu-nav a:hover{
     color: #774F41;
+}
+
+.menu-hamburguer, .mobile-menu{
+    display: none;
+}
+
+@media (max-width: 730px){
+    .menu-nav{
+        display: none;
+    }
+
+    .menu-hamburguer{
+        display: block;
+    }
+
+    .menu-hamburguer button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile.menu .menu-nav{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .abrir{
+        display: block;
+    }
 }
 
 .slogan{
@@ -130,20 +180,62 @@ img{
     margin-right: 10px;
 }
 
-.item-etapa:nth-of-type(1) h2::before{
-    background: #ae81ff;
-}
-
-.item-etapa:nth-of-type(2) h2::before{
-    background: #f9265e;
-}
-
-.item-etapa:nth-of-type(3) h2::before{
-    background: #66d9eb;
-}
-
 .item-etapa p{
     font-size: 1.25em;
     line-height: 1.4;
     color: #7c7c7c;
 }
+
+.eventos{
+    border-top: 2px solid #EF7A4C;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eventos h1{
+    margin-bottom: 1em;
+}
+
+.evento1 {
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+.info-evento{
+    margin-left: 20px;
+}
+
+.info-evento h2{
+    font-size: 1.5em;
+    color: #a4a4a4;
+    margin-bottom: 10px;
+}
+
+.info-evento p{
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
+    margin-bottom: 10px;
+}
+
+.info-evento a{
+    background: #F58B61;
+    border-radius: 5px;
+    color: #3C2B24;
+    padding: 10px;
+}
+
+.info-evento span, a{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.evento1 img{
+    border-radius: 5px;
+    max-width: 50%;
+}
+   
